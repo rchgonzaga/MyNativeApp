@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import { View, Text, FlatList } from "react-native";
+import React, { Component } from 'react';
+import { View, Text, FlatList } from 'react-native';
 
-import { contacts } from "../config/data";
-import colors from "../config/colors";
-import { ListItem } from "../components/ListItem";
+import { contacts } from '../config/data';
+import colors from '../config/colors';
+import { ListItem } from '../components/ListItem';
 
 export default class Contacts extends Component {
   handleRowPress = contact => {
-    this.props.navigation.navigate("Details", contact);
+    this.props.navigation.navigate('Details', contact);
   };
 
   render() {

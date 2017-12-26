@@ -1,8 +1,13 @@
-import React, { Component } from 'react'
-import Contacts from './screens/Contacts'
+import React from 'react';
+import { Platform } from 'react-native';
+import { Tabs, Drawer } from './config/router';
 
 const App = () => {
-  return <Contacts/>
-}
+  if (Platform.OS === 'ios') {
+    return <Tabs />;
+  }
 
-export default App
+  return <Drawer />;
+};
+
+export default App;

@@ -9,9 +9,11 @@ import colors from "../../config/colors";
 const ListItem = ({ contact, onPress }) => {
   const iconName =
     Platform.OS === "ios" ? "ios-arrow-forward" : "md-arrow-forward";
+
   const name = `${capitalizeFirstLetter(
     contact.name.first
   )} ${capitalizeFirstLetter(contact.name.last)}`;
+  
   return (
     <TouchableHighlight onPress={onPress} underlayColor={colors.rowUnderlay}>
       <View style={styles.row}>
