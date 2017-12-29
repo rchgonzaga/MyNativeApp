@@ -15,6 +15,7 @@ import Me from '../screens/Me';
 import Details from '../screens/Details';
 import { capitalizeFirstLetter } from '../helper/string';
 import { DrawerButton } from '../components/Header';
+import { Root } from "native-base";
 
 const LeftDrawerButton = ({ navigate }) => {
   if (Platform.OS === 'android') {
